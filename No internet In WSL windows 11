@@ -1,0 +1,23 @@
+No internet In WSL windows 11
+
+
+Steps1
+
+Open Powershell or Cmd as Administrator
+and run each of these commands:
+
+wsl --shutdown
+netsh winsock reset
+netsh int ip reset all
+netsh winhttp reset proxy
+ipconfig /flushdns
+
+step 2
+Hit the Windows Key
+type Network Reset
+hit enter.
+
+step3
+You should see this window.
+Click "Reset now".
+Restart Windows
